@@ -1,0 +1,2 @@
+class ParentAreaController < ProtectedAreaController
+end

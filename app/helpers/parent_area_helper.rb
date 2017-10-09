@@ -1,0 +1,2 @@
+module ParentAreaHelper
+end

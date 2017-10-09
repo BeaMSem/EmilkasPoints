@@ -1,0 +1,30 @@
+.child_achievements div{
+    border-radius: 3px;
+}
+.child_achievements{
+    /*border: 2px solid blue;*/
+    /*padding: 5px;*/
+    /*margin: 5px;*/
+    display: flex;
+    flex-flow: row wrap;
+}
+.child_activity_achievement_icons{
+    /*border: 1px solid blue;*/
+    display: flex;
+    flex-flow: row;
+}
+
+.achievement_icon{
+    /*border: 2px solid deepskyblue;*/
+    background-color: #d0eff7;
+    /*padding: 5px;*/
+    /*margin: 5px;*/
+    width: 2em;
+    height: 2em;
+}
+.achievement_icon.active{
+    opacity: 1;
+}
+.achievement_icon.inactive{
+    opacity: 0.2;
+}

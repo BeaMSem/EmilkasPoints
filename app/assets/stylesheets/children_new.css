@@ -1,0 +1,70 @@
+.children_avatars{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.single_avatar{
+    box-sizing: border-box;
+    width: 28vmin;
+    padding: 5px;
+    margin: 2px;
+    border: 1px solid deeppink;
+    border-radius: 3px;
+    background-color: #daf2f8;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.single_activity{
+    border: 1px solid blue;
+    box-sizing: border-box;
+    width: 28vmin;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 3px;
+    background-color: #daf2f8;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.activity_name{
+    font-size: 2vmax;
+    border: 1px solid orange;
+    margin: 2vmin 0;
+}
+.svg_activity,
+.svg_avatar{
+    border: 1px solid deeppink;
+    width: 85%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.svg_activity{
+    box-sizing: border-box;
+    padding: 2vmin;
+}
+.children_new_navigation{
+    font-size:7vmin;
+}
+.children_new_input_field_label{
+    font-size:3vmax;
+}
+.children_new_input_field_input input{
+    width: 80vmin;
+    height: 12vmin;
+    border-radius: 3px;
+    border:none;
+    font-size:3.5vmax;
+    font-family:inherit;
+}
+.children_new_input_field_input input:focus{
+    outline:none;
+}
+.single_activity.selected{
+    background-color: #67ff5a;
+}

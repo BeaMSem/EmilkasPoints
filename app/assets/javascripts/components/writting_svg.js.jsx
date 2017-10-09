@@ -1,0 +1,24 @@
+const Writting = React.createClass({
+    render(){return(
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 508 508">
+            <circle cx="254" cy="254" r="254" fill="#84DBFF"/>
+            <path d="M374.4 88.8H131.2c-5.2 0-9.6 4.4-9.6 9.6v311.2c0 5.2 4.4 9.6 9.6 9.6h243.2c5.2 0 9.6-4.4 9.6-9.6V98.4C384 93.2 379.6 88.8 374.4 88.8z" fill="#FFF"/>
+            <rect x="275.6" y="126" width="64.8" height="12" fill="#E6E9EE"/>
+            <rect x="234.4" y="163.2" width="106" height="12" fill="#E6E9EE"/>
+            <rect x="275.6" y="200.8" width="64.8" height="12" fill="#E6E9EE"/>
+            <rect x="256" y="238" width="84.4" height="12" fill="#E6E9EE"/>
+            <rect x="231.2" y="275.2" width="109.2" height="12" fill="#E6E9EE"/>
+            <rect x="165.2" y="126" width="104.4" height="12" fill="#E6E9EE"/>
+            <rect x="165.2" y="163.2" width="63.2" height="12" fill="#E6E9EE"/>
+            <rect x="165.2" y="200.8" width="104.4" height="12" fill="#E6E9EE"/>
+            <rect x="165.2" y="238" width="84.4" height="12" fill="#E6E9EE"/>
+            <rect x="165.2" y="275.2" width="60" height="12" fill="#E6E9EE"/>
+            <rect x="300.4" y="206.4" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 374.3137 719.8467)" width="71.6" height="152" fill="#FF7058"/>
+            <rect x="372.1" y="200.3" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 819.9457 132.5714)" width="20.8" height="71.6" fill="#E6E9EE"/>
+            <path d="M415.2 254l21.6-21.6c3.2-3.2 3.2-8.4 0-12L398 181.6c-3.2-3.2-8.4-3.2-12 0l-21.6 21.6L415.2 254z" fill="#F1543F"/>
+            <polygon points="256.8 310.8 238.4 380 307.6 361.6 " fill="#FFD05B"/>
+            <polygon points="244.4 357.6 238.4 380 260.8 374 " fill="#324A5E"/>
+        </svg>
+
+    )}
+});

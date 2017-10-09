@@ -1,0 +1,34 @@
+.buy_rewards{
+    /*border: 1px solid deepskyblue;*/
+    /*margin: 5px;*/
+    /*padding: 5px;*/
+    background: #d6eef6;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    border-radius: 5px;
+}
+.buy_rewards a{
+    /*border: 1px solid deepskyblue;*/
+    /*margin: 5px;*/
+    /*padding: 5px;*/
+    text-decoration: none;
+    color:grey;
+}
+.achievements_title{
+    /*border: 1px solid deepskyblue;*/
+    /*margin: 5px;*/
+    /*padding: 5px;*/
+    background: #d6eef6;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    border-radius: 5px;
+    color: grey;
+}
+.achievements_title a{
+    /*border: 1px solid deepskyblue;*/
+    /*margin: 5px;*/
+    /*padding: 5px;*/
+    color:grey;
+}

@@ -1,0 +1,118 @@
+.login_form,
+.sign_up_form{
+    /*border:1px solid deepskyblue;*/
+    /*margin: 5px;*/
+    /*padding: 5px;*/
+}
+.form_label_top{
+    /*border:1px solid deepskyblue;*/
+    /*margin: 5px;*/
+    /*padding: 5px;*/
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+.form_label_bottom{
+    /*border:1px solid deepskyblue;*/
+    /*margin: 5px;*/
+    /*padding: 5px;*/
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+.form_label{
+    /*border:1px solid deepskyblue;*/
+    /*margin: 5px;*/
+    /*padding: 5px;*/
+}
+.the_form{
+    /*border:1px solid deepskyblue;*/
+    /*margin: 5px;*/
+    /*padding: 5px;*/
+}
+.form_label_title{
+    /*border:1px solid deepskyblue;*/
+    /*margin: 5px;*/
+    /*padding: 5px;*/
+    font-size: 2rem;
+}
+.form_label_message{
+    /*border:1px solid deepskyblue;*/
+    /*margin: 5px;*/
+    /*padding: 5px;*/
+    font-size: 1rem;
+    color: grey;
+}
+.form_label_button input{
+    /*border:1px solid deepskyblue;*/
+    /*margin: 5px;*/
+    /*padding: 5px;*/
+    font-size: 1rem;
+    color:deeppink;
+    background-color: transparent;
+    font-family: inherit;
+    border: none;
+
+}
+
+.access_button{
+    /*border:1px solid deepskyblue;*/
+    /*margin: 5px;*/
+    /*padding: 5px;*/
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+.access_button input[type='submit']{
+    /*border:1px solid orangered;*/
+    /*margin: 5px;*/
+    /*padding: 5px;*/
+    background-color: #81ca3e;
+    color: white;
+    font-size:1.4rem;
+    font-family: inherit;
+    border: none;
+    border-radius: 5px;
+    width: 12rem;
+    height: 2.5rem;
+}
+.form_input_field{
+    /*border:1px solid deepskyblue;*/
+    /*margin: 5px;*/
+    /*padding: 5px;*/
+}
+.form_input_field_label{
+     /*border:1px solid deepskyblue;*/
+     /*margin: 5px;*/
+     /*padding: 5px;*/
+    font-size: 1rem;
+}
+.form_input_field_input{
+    /*border:1px solid deepskyblue;*/
+    /*margin: 5px;*/
+    /*padding: 5px;*/
+}
+.form_input_field_input input[type='text'],
+.form_input_field_input input[type='password']{
+    border:none;
+    margin: 0;
+    padding: 3px;
+    /*border:1px solid orangered;*/
+    /*margin: 5px;*/
+    /*padding: 5px;*/
+    background-color: white !important;
+    border-radius: 3px;
+    box-shadow: none;
+    width: 80%;
+    height: 2rem;
+    font-size: 0.8rem;
+    color: grey;
+}
+.form_input_field_input input[type='text']:focus,
+.form_input_field_input input[type='password']:focus{
+    outline: none;
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+}
