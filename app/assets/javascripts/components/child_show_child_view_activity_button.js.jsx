@@ -1,4 +1,4 @@
-var Activity = React.createClass({
+var ChildActivityButton = React.createClass({
 
     getInitialState(){
         return({
@@ -11,7 +11,7 @@ var Activity = React.createClass({
             url: '/child_activities/'+this.props.child_activity.id,
             method: 'PUT',
             dataType: 'JSON',
-            data: {multiplier:this.state.multiplier + 1, active: false},
+            data: {multiplier: this.state.multiplier + 1, active: false},
             context: this,
             success: function(activity){
                 console.log('ACTIVITY add');
@@ -97,4 +97,5 @@ var Activity = React.createClass({
                 : this.renderChildSingleActivityInactive()
         )
     }
+
 });

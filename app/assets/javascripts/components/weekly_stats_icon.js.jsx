@@ -19,8 +19,8 @@ var WeeklyStatsIcon = React.createClass({
         )
     },
     render(){
-        console.log('this.props');
-        console.log(this.props);
+        // console.log('this.props');
+        // console.log(this.props);
         return(
             this.state.active ? this.renderActiveIcon() : this.renderInactiveIcon()
         )
@@ -28,8 +28,8 @@ var WeeklyStatsIcon = React.createClass({
     componentWillReceiveProps(nextProps){
         // console.log('this.state weekly stats');
         // console.log(this.state);
-        console.log('nextProps ICON');
-        console.log(nextProps);
+        // console.log('nextProps ICON');
+        // console.log(nextProps);
         this.setState({active: nextProps.active})
 
     }

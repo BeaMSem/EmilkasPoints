@@ -7,8 +7,8 @@ class FamiliesController < ProtectedAreaController
   end
 
   def show
-    family = Family.find(params[:id])
-    @children = family.children
+    @family
+    @children = @family.children
   end
 
   def create

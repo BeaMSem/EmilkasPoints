@@ -6,7 +6,12 @@ class ChildrenController < ProtectedAreaController
     child = Child.find(params[:id])
     rewards = child.child_rewards
     activities = child.child_activities
-    @data = {:child=> child, :child_rewards => rewards, :child_activities => activities}
+    @data = {
+        :child=> child,
+        :child_rewards => rewards,
+        :child_activities => activities,
+        :parent_view => session[:parent_view]
+    }
   end
 
   def create
