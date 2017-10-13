@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f18184c-0eeb-40a9-aaf3-1458d0658648" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/components/family_show_parent_view.js.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/components/family_show_welcome_view.js.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/components/family_show.js.jsx" afterPath="$PROJECT_DIR$/app/assets/javascripts/components/family_show.js.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/components/family_show_access.js.jsx" afterPath="$PROJECT_DIR$/app/assets/javascripts/components/family_show_access.js.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/components/family_show_with_children.js.jsx" afterPath="$PROJECT_DIR$/app/assets/javascripts/components/family_show_with_children.js.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/components/family_show_no_children.js.jsx" afterPath="$PROJECT_DIR$/app/assets/javascripts/components/family_show_no_children.js.jsx" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -22,21 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="child_show.js.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/components/child_show.js.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="6" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="32" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="family_show.js.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/components/family_show.js.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="119" column="35" lean-forward="false" selection-start-line="119" selection-start-column="35" selection-end-line="119" selection-end-column="35" />
+            <state relative-caret-position="194">
+              <caret line="116" column="44" lean-forward="true" selection-start-line="116" selection-start-column="44" selection-end-line="116" selection-end-column="44" />
               <folding>
                 <element signature="e#133#157#0" expanded="false" />
               </folding>
@@ -47,9 +36,28 @@
       <file leaf-file-name="family_show_no_children.js.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/components/family_show_no_children.js.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="15" lean-forward="true" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+            <state relative-caret-position="30">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="family_show_welcome_view.js.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/components/family_show_welcome_view.js.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+              <folding>
+                <element signature="e#519#639#0" expanded="false" />
+                <element signature="e#662#846#0" expanded="false" />
+                <element signature="e#874#1004#0" expanded="false" />
+                <element signature="e#1038#1221#0" expanded="false" />
+                <element signature="e#1247#1418#0" expanded="false" />
+                <element signature="e#1447#1968#0" expanded="false" />
+                <element signature="e#1997#2254#0" expanded="false" />
+                <element signature="e#2292#2970#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -143,7 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/views/families/family_members.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20170918121516_create_children.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20170918121435_create_families.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/components/access_registration_form.js.jsx" />
@@ -189,10 +196,11 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/components/child_show_parent_view.js.jsx" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/components/family_show_with_children_parent_view.js.jsx" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/js_snip/class.js.jsx" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/components/family_show_no_children.js.jsx" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/components/family_show_with_children.js.jsx" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/components/family_show_access.js.jsx" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/components/family_show_parent_view.js.jsx" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/components/family_show_no_children.js.jsx" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/components/family_show_welcome_view.js.jsx" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/components/family_show.js.jsx" />
       </list>
     </option>
@@ -211,8 +219,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="407" />
-    <option name="y" value="164" />
+    <option name="x" value="344" />
+    <option name="y" value="42" />
     <option name="width" value="1301" />
     <option name="height" value="999" />
   </component>
@@ -506,15 +514,15 @@
       <workItem from="1507893116934" duration="10546000" />
       <workItem from="1507911210537" duration="23000" />
       <workItem from="1507911434564" duration="27000" />
-      <workItem from="1507911512257" duration="1006000" />
+      <workItem from="1507911512257" duration="1359000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175176000" />
+    <option name="totallyTimeSpent" value="175529000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="407" y="164" width="1301" height="999" extended-state="0" />
+    <frame x="344" y="42" width="1301" height="999" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3661636" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -524,7 +532,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32851985" sideWeight="0.49447852" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3858521" sideWeight="0.301227" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3858521" sideWeight="0.301227" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -570,13 +578,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/components/SVG_avatar.js.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/components/SVG_activity.js.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -869,26 +870,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/components/family_show_no_children.js.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="15" lean-forward="true" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/components/family_show_with_children_parent_view.js.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="29" column="6" lean-forward="false" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/js_snip/class.js.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="24" selection-end-column="47" />
           <folding />
         </state>
       </provider>
@@ -919,10 +904,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/js_snip/class.js.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="24" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/components/family_show_no_children.js.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/components/family_show_welcome_view.js.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+          <folding>
+            <element signature="e#519#639#0" expanded="false" />
+            <element signature="e#662#846#0" expanded="false" />
+            <element signature="e#874#1004#0" expanded="false" />
+            <element signature="e#1038#1221#0" expanded="false" />
+            <element signature="e#1247#1418#0" expanded="false" />
+            <element signature="e#1447#1968#0" expanded="false" />
+            <element signature="e#1997#2254#0" expanded="false" />
+            <element signature="e#2292#2970#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/components/family_show.js.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="119" column="35" lean-forward="false" selection-start-line="119" selection-start-column="35" selection-end-line="119" selection-end-column="35" />
+        <state relative-caret-position="194">
+          <caret line="116" column="44" lean-forward="true" selection-start-line="116" selection-start-column="44" selection-end-line="116" selection-end-column="44" />
           <folding>
             <element signature="e#133#157#0" expanded="false" />
           </folding>

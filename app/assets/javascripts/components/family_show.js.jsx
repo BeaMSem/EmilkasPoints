@@ -117,7 +117,10 @@ var FamilyShow = React.createClass({
                     ? this.props.parent_view
                         ? 'parent_view'
                         : 'access_view'
-                    : 'welcome_view'
+                    : <FamilyShowWelcomeView
+                        children = {this.props.children}
+                        activities = {this.props.activities}
+                        />
 
                 }
             </div>)
