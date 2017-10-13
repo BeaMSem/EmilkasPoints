@@ -1,5 +1,0 @@
-var FamilyShowNoChildrenView = React.createClass({
-
-
-
-});

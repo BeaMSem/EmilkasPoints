@@ -8,9 +8,7 @@ var FamilyShowAccess = React.createClass({
     // this.props.xxxxxx
     // this.state.xxxxxx
 
-    getInitialState(){
-        return({ null })
-    },
+
     onClickSessionSetStateParentView(){
         $.ajax({
             url:'/parent_view',
@@ -18,7 +16,7 @@ var FamilyShowAccess = React.createClass({
             context:this,
             success: function(data){
                 console.log(data);
-
+                this.props.setStateParentView();
             }
         });
     },

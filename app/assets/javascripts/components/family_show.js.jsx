@@ -5,12 +5,11 @@ var FamilyShow = React.createClass({
             parent_view : false
         })
     },
-
-    // setStateParentView(){
-    //     this.setState({
-    //         parent_view: false
-    //     })
-    // },
+    setStateParentView(){
+        this.setState({
+            parent_view: true
+        })
+    },
     // onClickSessionParentView(){
     //     $.ajax({
     //             url:'/parent_view',
@@ -110,19 +109,50 @@ var FamilyShow = React.createClass({
     //
     //     )
     // },
+    renderAppropriateView(){
+        // if(this.props.children.length){
+        //     if(this.state.parent_view){
+        //         return(<FamilyShowParentView
+        //             children = {this.props.children}
+        //             activities = {this.props.activities}
+        //             updatePoints = {this.updatePoints}
+        //         />)
+        //     }else{
+        //         return(<FamilyShowAccess
+        //             children = {this.props.children}
+        //             activities = {this.props.activities}
+        //             setStateParentView = {this.setStateParentView}
+        //         />)
+        //     }
+        // }else{
+        //     return(<FamilyShowWelcomeView
+        //         children = {this.props.children}
+        //         activities = {this.props.activities}
+        //     />)
+        // }
+        return(
+                this.props.children.length !== 0
+                ?   this.state.parent_view
+                    ? <FamilyShowParentView
+                        children = {this.props.children}
+                        activities = {this.props.activities}
+                        updatePoints = {this.updatePoints}
+                    />
+                    :<FamilyShowAccess
+                        children = {this.props.children}
+                        activities = {this.props.activities}
+                        setStateParentView = {this.setStateParentView}
+                    />
+                :<FamilyShowWelcomeView
+                    children = {this.props.children}
+                    activities = {this.props.activities}
+                />
+        )
+    },
     renderFamilyShow(){
         return(
             <div className="family_show">
-                {this.props.children.length
-                    ? this.props.parent_view
-                        ? 'parent_view'
-                        : 'access_view'
-                    : <FamilyShowWelcomeView
-                        children = {this.props.children}
-                        activities = {this.props.activities}
-                        />
-
-                }
+                {this.renderAppropriateView()}
             </div>)
     },
     render(){
@@ -133,17 +163,4 @@ var FamilyShow = React.createClass({
         console.log(this.state);
         return( this.renderFamilyShow() )
     }
-
 });
-
-
-    // ?   <FamilyShowWithChildrenView
-    //     children = {this.props.children}
-    //     activities = {this.props.activities}
-    //     updatePoints = {this.updatePoints}
-    // />
-    // :   <FamilyShowAccess
-    //     children = {this.props.children}
-    //     activities = {this.props.activities}
-    //     updatePoints = {this.updatePoints}
-    // />
