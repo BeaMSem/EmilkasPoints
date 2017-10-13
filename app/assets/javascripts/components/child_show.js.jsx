@@ -4,6 +4,7 @@ var ChildShow = React.createClass({
         return({
             no_points:this.props.data.child.no_points,
             child_activities: this.props.data.child_activities,
+            child_rewards: this.props.data.child_rewards,
             parent_view: this.props.data.parent_view
         })
     },
@@ -60,7 +61,9 @@ var ChildShow = React.createClass({
     renderChildShowChildView(){
         return(
             <ChildShowChildView
+                no_points = {this.state.no_points}
                 child_activities    = {this.state.child_activities}
+                child_rewards    = {this.state.child_rewards}
                 updatePoints        = {this.updatePoints}
                 updateChildActivitiesState = {this.updateChildActivitiesState}
             />
@@ -70,15 +73,16 @@ var ChildShow = React.createClass({
         return(
             <ChildShowParentView
                 updatePoints        = {this.updatePoints}
+                no_points = {this.state.no_points}
             />
         )
     },
     render() {
-        console.log('CHILD SHOW');
-        console.log('this.props');
-        console.log(this.props);
-        console.log('this.state');
-        console.log(this.state);
+        // console.log('CHILD SHOW');
+        // console.log('this.props');
+        // console.log(this.props);
+        // console.log('this.state');
+        // console.log(this.state);
         return (
             <div>
                 {this.renderChildHeader()}

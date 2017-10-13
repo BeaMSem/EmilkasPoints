@@ -9,6 +9,7 @@ class FamiliesController < ProtectedAreaController
   def show
     @family
     @children = @family.children
+    @activities = Activity.all
   end
 
   def create

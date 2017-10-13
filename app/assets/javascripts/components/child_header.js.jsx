@@ -2,7 +2,7 @@ var ChildHeader = React.createClass({
 
     getInitialState(){
         return({
-            no_points: this.props.no_points
+            no_points: this.props.child.no_points ?  this.props.child.no_points : 0
         });
     },
 

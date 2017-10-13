@@ -32,8 +32,8 @@ var ChildrenNew = React.createClass({
             },
             context:this,
             success:function(data){
-                console.log(data);
-                window.location.replace("../families/"+data.family_id);
+             console.log(data);
+                this.props.addToArray(data)
             }
 
 

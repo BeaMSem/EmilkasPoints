@@ -25,48 +25,21 @@ activities.each_with_index do |activity_item, index|
 end
 
 
+rewards = [
+    {:name => '£1', :price => 60},
+    {:name => '£2', :price => 120},
+    {:name => '£5', :price => 300},
+    {:name => '£10', :price => 600},
+    {:name => '15 minutes', :price => 15},
+    {:name => '30 minutes', :price => 30},
+    {:name => '45 minutes', :price => 45},
+    {:name => '60 minutes', :price => 60},
 
-5.times do |i|
-  family = Family.create(
-      :name => "Family #{i}",
-                :email => "email#{i}@test.com",
-                :password => "kukuryku123"
+]
+rewards.each_with_index do |reward_item, index|
+  reward = Reward.create(
+      :name => reward_item[:name],
+      :price => reward_item[:price]
   )
-
-  3.times do |k|
-
-    child = Child.new(:name => "Emilka",
-                      :no_points => 210,
-                      :svg => 'SVG_avatar_0003'
-    )
-    family.children << child
-
-    Activity.all.each_with_index do |activity, index|
-      family.activities << activity
-
-          child_activity = ChildActivity.new(
-              :child => child,
-              :name => activity.name,
-              :multiplier => 1,
-              :multiplicand => 5,
-              :svg => activity.svg
-          )
-          child.child_activities << child_activity
-
-    end
-    3.times do |l|
-      reward = Reward.new(
-          :name => "child #{k} reward #{l}",
-          :price => (l+2)*15
-      )
-      family.rewards << reward
-      child_reward = ChildReward.new(
-                                       :child => child,
-                                       :name => reward.name,
-                                       :price => reward.price
-      )
-      child.child_rewards << child_reward
-    end
-  end
 end
 

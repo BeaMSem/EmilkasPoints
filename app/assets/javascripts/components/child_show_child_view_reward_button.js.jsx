@@ -13,14 +13,14 @@ var ChildRewardButton = React.createClass({
         return 'still missing ' + amount + ' points'
     },
     handleOnClick(){
-        this.props.updateNoPoints((this.props.reward.price)*(-1))
+        this.props.updatePoints((this.props.reward.price)*(-1))
     },
     render(){
-        console.log('');
-        console.log('props');
-        console.log(this.props);
-        console.log('available');
-        console.log(this.props.no_points >= this.props.reward.price);
+        // console.log('');
+        // console.log('props');
+        // console.log(this.props);
+        // console.log('available');
+        // console.log(this.props.no_points >= this.props.reward.price);
         return(
             <div
                 className="child_single_reward"

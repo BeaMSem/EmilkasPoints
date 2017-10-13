@@ -20,6 +20,7 @@ class AccessController < PublicAreaController
 
   def logout
     session[:family_id] = nil
+    session[:parent_view] = nil
     @msg =  'you are now logged out'
     redirect_to(login_path)
   end
