@@ -7,19 +7,7 @@ var FamilyShowWithChildrenView = React.createClass({
             points: [5,10,20,50]
         })
     },
-    onClickSessionSetStateParentView(){
-        $.ajax({
-                url:'/parent_view',
-                method:'post',
-                context:this,
-                success: function(data){
-                    console.log(data);
-                    this.setState({
-                        parent_view: true
-                    })
-                }
-        });
-    },
+
     parentViewFalse(){
         return(
             <div>
