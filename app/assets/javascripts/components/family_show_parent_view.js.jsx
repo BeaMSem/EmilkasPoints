@@ -9,7 +9,10 @@ var FamilyShowParentView = React.createClass({
     // this.state.xxxxxx
 
     getInitialState(){
-        return({ null })
+        return({
+            children: this.props.children,
+            points_array: [5,10,20,50]
+        })
     },
 
     render(){

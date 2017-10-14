@@ -77,7 +77,9 @@ var FamilyShowWelcomeView = React.createClass({
     renderFamilyShowNoChildrenView(){
         return(
             <div className="family_show_no_children_view">
-                <div className="top_container">{this.renderTopContainer()}</div>
+                <div className="top_container">
+                    {this.renderTopContainer()}
+                </div>
                 <div className="middle_container">
                     {   this.state.is_visible_form_container
                         ? this.renderMiddleContainer()
