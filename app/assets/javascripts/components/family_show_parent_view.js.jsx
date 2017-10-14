@@ -11,17 +11,64 @@ var FamilyShowParentView = React.createClass({
     getInitialState(){
         return({
             children: this.props.children,
-            points_array: [5,10,20,50]
+            points: [5,10,20,50]
         })
     },
+    renderSinglePointBox(points, index){
+        return(
+            <div key={index}>
+                {points}
+            </div>
+        )
+    },
+    renderMapPoints(){
+        return(
+            <div>
+                {this.state.points.map(this.renderSinglePointBox)}
+            </div>
 
+        )
+    },
+    renderSingleComponent(child, index){
+        return(
+            <div key = {index}>
+                <div className="child_header">
+                    <ChildHeader
+                        child={child}
+                    />
+                </div>
+                <div className="extra_points">{this.renderMapPoints()}</div>
+                <div className="child_edit">
+                    <div className="transactions">transaction</div>
+                    <div className="settings">
+                        <a href={"../children/"+child.id+"/edit"}>edit child profile</a>
+                    </div>
+                    <div className="child_view">
+                        <a href={"../children/"+child.id}>{child.name} view</a>
+
+                    </div>
+                </div>
+            </div>
+        )
+    },
+    renderMapSingleComponent(){
+        return(
+            <div>
+                {this.state.children.map(this.renderSingleComponent)}
+            </div>
+        )
+    },
     render(){
         console.log('FamilyShowParentView- this.props');
         console.log(this.props);
         console.log('FamilyShowParentView- this.state');
         console.log(this.state);
 
-        return(<div>FamilyShowParentView</div>)
+        return(
+            <div>
+                {this.renderMapSingleComponent()}
+            </div>
+        )
     },
 
 });

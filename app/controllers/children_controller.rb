@@ -38,6 +38,9 @@ class ChildrenController < ProtectedAreaController
     @activities = Activity.all
   end
 
+  def edit
+    
+  end
   def update
     child = Child.find(params[:id])
     child.update(:no_points => params[:no_points])
