@@ -57,29 +57,29 @@ var ChildShowChildView = React.createClass({
             />
         )
     },
-    // renderAchievementsTitle(){
-    //     return(
-    //         <div className="achievements_title">
-    //             <div>This week</div>
-    //             <div><a href="#">Edit</a></div>
-    //         </div>
-    //     )
-    // },
-    // renderSingleWeeklyStat(activity, index){
-    //     return(
-    //             <WeeklyStats
-    //                 key = {index}
-    //                 child_activity = {activity}
-    //             />
-    //     )
-    // },
-    // renderWeeklyStats(){
-    //     return(
-    //         <div className="child_achievements">
-    //             {this.state.child_activities.map(this.renderSingleWeeklyStat)}
-    //         </div>
-    //     )
-    // },
+    renderAchievementsTitle(){
+        return(
+            <div className="achievements_title">
+                <div>This week</div>
+                <div><a href="#">Edit</a></div>
+            </div>
+        )
+    },
+    renderSingleWeeklyStat(activity, index){
+        return(
+                <WeeklyStats
+                    key = {index}
+                    child_activity = {activity}
+                />
+        )
+    },
+    renderWeeklyStats(){
+        return(
+            <div className="child_achievements">
+                {this.state.child_activities.map(this.renderSingleWeeklyStat)}
+            </div>
+        )
+    },
     renderActivitiesRewardsViews(){
         return(
             this.state.activities_view ? this.renderDailyActivities() : this.renderChildRewards()
@@ -95,8 +95,8 @@ var ChildShowChildView = React.createClass({
                 <div className="single_child_component">
                     <div className="single_child_sub_component">{this.renderBuyRewards()}</div>
                     <div className="single_child_sub_component">{this.renderActivitiesRewardsViews()}</div>
-                    {/*<div className="single_child_sub_component">{this.renderAchievementsTitle()}</div>*/}
-                    {/*<div className="single_child_sub_component">{this.renderWeeklyStats()}</div>*/}
+                    <div className="single_child_sub_component">{this.renderAchievementsTitle()}</div>
+                    <div className="single_child_sub_component">{this.renderWeeklyStats()}</div>
                 </div>
             </div>
         )

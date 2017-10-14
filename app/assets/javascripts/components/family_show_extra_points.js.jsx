@@ -13,10 +13,10 @@ var ExtraPoints = React.createClass({
     },
 
     render(){
-        console.log('ExtraPoints- this.props');
-        console.log(this.props);
-        console.log('ExtraPoints- this.state');
-        console.log(this.state);
+        // console.log('ExtraPoints- this.props');
+        // console.log(this.props);
+        // console.log('ExtraPoints- this.state');
+        // console.log(this.state);
 
         return(<div>ExtraPoints</div>)
     },

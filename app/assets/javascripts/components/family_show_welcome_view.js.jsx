@@ -96,10 +96,10 @@ var FamilyShowWelcomeView = React.createClass({
         )
     },
     render(){
-        console.log('FamilyShowWelcomeView- this.props');
-        console.log(this.props);
-        console.log('FamilyShowWelcomeView- this.state');
-        console.log(this.state);
+        // console.log('FamilyShowWelcomeView- this.props');
+        // console.log(this.props);
+        // console.log('FamilyShowWelcomeView- this.state');
+        // console.log(this.state);
 
         return(this.renderFamilyShowNoChildrenView())
     },

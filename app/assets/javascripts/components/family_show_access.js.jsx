@@ -15,16 +15,16 @@ var FamilyShowAccess = React.createClass({
             method:'post',
             context:this,
             success: function(data){
-                console.log(data);
+                // console.log(data);
                 this.props.setStateParentView();
             }
         });
     },
     render(){
-        console.log('FamilyShowAccess- this.props');
-        console.log(this.props);
-        console.log('FamilyShowAccess- this.state');
-        console.log(this.state);
+        // console.log('FamilyShowAccess- this.props');
+        // console.log(this.props);
+        // console.log('FamilyShowAccess- this.state');
+        // console.log(this.state);
 
         return(
             <div>

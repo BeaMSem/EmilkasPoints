@@ -156,11 +156,11 @@ var FamilyShow = React.createClass({
             </div>)
     },
     render(){
-        console.log('FamilyShow');
-        console.log('this.props');
-        console.log(this.props);
-        console.log('this.state');
-        console.log(this.state);
+        // console.log('FamilyShow');
+        // console.log('this.props');
+        // console.log(this.props);
+        // console.log('this.state');
+        // console.log(this.state);
         return( this.renderFamilyShow() )
     }
 });

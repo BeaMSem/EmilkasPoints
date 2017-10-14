@@ -2,7 +2,7 @@ var ChildHeader = React.createClass({
 
     getInitialState(){
         return({
-            no_points: this.props.child.no_points ?  this.props.child.no_points : 0
+            child: this.props.child
         });
     },
 
@@ -36,19 +36,20 @@ var ChildHeader = React.createClass({
                 </div>
                 <div className="child_greeting_container_right">
                     {this.renderTitle()}
-                    <div className="child_greeting_container_right_points">{this.state.no_points} points!</div>
+                    <div className="child_greeting_container_right_points">{this.state.child.no_points} points!</div>
                 </div>
             </div>
         )
     },
     componentWillReceiveProps(nextProps){
-        console.log('ChildHeader');
+        console.log('ChildHeaderXXXXXX');
         console.log('nextProps');
-        console.log(nextProps);
-        return(
-            this.setState({
-                no_points: nextProps.no_points
-            })
-        )
+        console.log(nextProps.child.no_points);
+        this.setState({child: nextProps.child});
+        console.log('ChildHeaderXXXXXX');
+       console.log(this.state);
+
+
+
     }
 });
