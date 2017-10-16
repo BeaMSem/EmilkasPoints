@@ -5,8 +5,11 @@ var ChildShow = React.createClass({
             child : this.props.data.child,
             child_activities: this.props.data.child_activities,
             child_rewards: this.props.data.child_rewards,
-            parent_view: this.props.data.parent_view
+            rewards_view: false
         })
+    },
+    toggleRewardsView(){
+        this.setState({rewards_view:!this.state.rewards_view})
     },
     updateChildActivitiesState(child_activity){
         var array = this.state.child_activities;
@@ -44,7 +47,6 @@ var ChildShow = React.createClass({
             }
         })
     },
-
     renderChildHeader(){
         return(
             <ChildHeader
@@ -61,16 +63,33 @@ var ChildShow = React.createClass({
             />
         )
     },
+    renderChildRewards(){
+        return(
+            <ChildShowRewards
+                child_rewards = {this.state.child_rewards}
+                child = {this.state.child}
+                updatePoints = {this.updatePoints}
+            />
+        )
+    },
     renderChildAchievements(){
         return(
-            <ChildShowAchievements/>
+            this.state.child_activities.map(function(activity){
+                return(
+                    <WeeklyStats
+                        key={activity.id}
+                        child_activity = {activity}
+                    />
+                )
+            })
         )
     },
     renderChildShow(){
         return(
             <div>
                 {this.renderChildHeader()}
-                {this.renderChildActivities()}
+                <button onClick={this.toggleRewardsView}>{this.state.rewards_view ? '< activities' : 'rewards >'}</button>
+                {this.state.rewards_view ? this.renderChildRewards() : this.renderChildActivities()}
                 {this.renderChildAchievements()}
             </div>
 

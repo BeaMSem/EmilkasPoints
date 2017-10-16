@@ -10,6 +10,7 @@ class FamiliesController < ProtectedAreaController
     @family
     @children = @family.children
     @activities = Activity.all
+    @rewards = Reward.all
   end
 
   def create

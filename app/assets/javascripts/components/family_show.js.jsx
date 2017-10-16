@@ -146,6 +146,7 @@ var FamilyShow = React.createClass({
                 :<FamilyShowWelcomeView
                     children = {this.props.children}
                     activities = {this.props.activities}
+                    rewards = {this.props.rewards}
                 />
         )
     },

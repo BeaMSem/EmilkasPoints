@@ -30,12 +30,22 @@ class ChildrenController < ProtectedAreaController
         )
         @child.child_activities << child_activity
       end
+      params[:rewards].each do |id|
+        reward = Reward.find(id)
+        child_reward = ChildReward.new(
+            :child => @child,
+            :name => reward.name,
+            :price => reward.price
+        )
+        @child.child_rewards << child_reward
+      end
     end
     render json: @child
   end
 
   def new
     @activities = Activity.all
+    @rewards = Reward.all
   end
 
   def edit

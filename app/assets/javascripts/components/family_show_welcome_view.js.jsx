@@ -56,6 +56,7 @@ var FamilyShowWelcomeView = React.createClass({
                 <div className="the_form">
                     <ChildrenNew
                         activities = {this.props.activities}
+                        rewards = {this.props.rewards}
                         addToArray = {this.addToArray}
                     />
                 </div>

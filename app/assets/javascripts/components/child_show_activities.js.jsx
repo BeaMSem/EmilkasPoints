@@ -10,7 +10,7 @@ var ChildShowActivities = React.createClass({
 
     getInitialState(){
         return({
-null
+            null
         })
     },
     toggleActivitiesView(){

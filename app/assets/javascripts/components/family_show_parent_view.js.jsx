@@ -38,7 +38,13 @@ var FamilyShowParentView = React.createClass({
         // console.log(this.state);
 
         return(
-            this.renderChildren()
+            <div>
+                {this.renderChildren()}
+                <div><a href="../children/new">add new child</a></div>
+            </div>
+
+
+
         )
     },
 

@@ -4,7 +4,8 @@ var ChildrenNew = React.createClass({
         return({
             name: '',
             avatar_svg:'',
-            activities:[]
+            activities:[],
+            rewards: []
         })
     },
     getDefaultProps(){
@@ -28,7 +29,8 @@ var ChildrenNew = React.createClass({
             data: {
                     name:this.state.name,
                     svg: this.state.avatar_svg,
-                    activities: this.state.activities
+                    activities: this.state.activities,
+                    rewards: this.state.rewards
             },
             context:this,
             success:function(data){
@@ -66,6 +68,28 @@ var ChildrenNew = React.createClass({
         activities_array_od_ids.splice(activity_index,1);
         this.setState({
             activities: activities_array_od_ids
+        })
+    },
+    handleOnClickAddReward(reward){
+
+        var rewards_ids = this.state.rewards;
+        rewards_ids.push(reward.id);
+        this.setState({
+            rewards: rewards_ids
+        })
+    },
+    removeReward(reward){
+
+        var reward_ids = this.state.rewards;
+        var reward_index = reward_ids.findIndex(
+            function(array_item, index){
+                return array_item === reward.id
+            }
+        );
+
+        reward_ids.splice(reward_index,1);
+        this.setState({
+            rewards: reward_ids
         })
     },
     handleChange(e){
@@ -122,6 +146,21 @@ var ChildrenNew = React.createClass({
             </div>
         )
     },
+    renderRewards(){
+        return(
+            <div>{this.props.rewards.map(this.renderSingleReward)}</div>
+        )
+    },
+    renderSingleReward(reward, index){
+            return(
+                <RewardsForm
+                    key = {reward.id}
+                    reward = {reward}
+                    handleOnClickAddReward = {this.handleOnClickAddReward}
+                    removeReward={this.removeReward}
+                />
+            )
+    },
     render(){
         console.log(this.props.activities);
         return(
@@ -156,6 +195,9 @@ var ChildrenNew = React.createClass({
                                 <label htmlFor="avatar">Child's Activities:</label>
                             </div>
                             {this.renderChildrenActivities()}
+                        </div>
+                        <div>
+                            {this.renderRewards()}
                         </div>
                         <div className="access_button">
                             <input
