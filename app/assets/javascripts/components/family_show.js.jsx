@@ -2,7 +2,7 @@ var FamilyShow = React.createClass({
 
     getInitialState(){
         return({
-            parent_view : false
+            parent_view : this.props.data.parent_view
         })
     },
     setStateParentView(){
@@ -131,22 +131,23 @@ var FamilyShow = React.createClass({
         //     />)
         // }
         return(
-                this.props.children.length !== 0
+                this.props.data.children.length !== 0
                 ?   this.state.parent_view
                     ? <FamilyShowParentView
-                        children = {this.props.children}
-                        activities = {this.props.activities}
+                        children = {this.props.data.children}
+                        activities = {this.props.data.activities}
                         updatePoints = {this.updatePoints}
+                        rewards = {this.props.data.rewards}
                     />
                     :<FamilyShowAccess
-                        children = {this.props.children}
-                        activities = {this.props.activities}
+                        children = {this.props.data.children}
+                        activities = {this.props.data.activities}
                         setStateParentView = {this.setStateParentView}
                     />
                 :<FamilyShowWelcomeView
-                    children = {this.props.children}
-                    activities = {this.props.activities}
-                    rewards = {this.props.rewards}
+                    children = {this.props.data.children}
+                    activities = {this.props.data.activities}
+                    rewards = {this.props.data.rewards}
                 />
         )
     },

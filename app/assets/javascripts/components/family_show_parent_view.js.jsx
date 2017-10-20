@@ -11,10 +11,23 @@ var FamilyShowParentView = React.createClass({
     getInitialState(){
         return({
             children: this.props.children,
-            points: [5,10,20,50]
+            points: [5,10,20,50],
+            is_visible_form_container : false
         })
     },
-
+    toggleStateIsVisibleFormContainer(){
+        this.setState({
+            is_visible_form_container : !this.state.is_visible_form_container
+        })
+    },
+    addToArray(child){
+        var array = this.state.children;
+        array.push(child);
+        this.setState({
+            children:array,
+            is_visible_form_container : false
+        })
+    },
     renderSingleChild(child, index){
         return(
             <ParentViewSingleChild
@@ -40,7 +53,23 @@ var FamilyShowParentView = React.createClass({
         return(
             <div>
                 {this.renderChildren()}
-                <div><a href="../children/new">add new child</a></div>
+                <div className="children_new_form_container">
+                    <div className="light_box">light_box</div>
+                    <div className="the_form">
+                        {
+                            this.state.is_visible_form_container
+                            ?<ChildrenNew
+                                activities = {this.props.activities}
+                                rewards = {this.props.rewards}
+                                addToArray = {this.addToArray}
+                            />
+                            :false
+                        }
+
+                    </div>
+                    <div><input type="button" value="cancel" onClick={this.toggleStateIsVisibleFormContainer}/></div>
+                </div>
+
             </div>
 
 

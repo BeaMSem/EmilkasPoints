@@ -106,4 +106,3 @@ var FamilyShowWelcomeView = React.createClass({
     },
 
 });
-{/*<%= react_component 'XXXXXXX',         %>*/}

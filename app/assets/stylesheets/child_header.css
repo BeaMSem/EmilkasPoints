@@ -1,0 +1,44 @@
+.child_header{
+    border: 1px solid deepskyblue;
+    margin: 5px;
+    padding: 5px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.child_header .left{
+    border: 1px solid deepskyblue;
+    margin: 5px;
+    padding: 5px;
+
+    flex: 2;
+}
+.child_header .left .avatar{
+    border: 1px solid deepskyblue;
+    margin: 5px;
+    padding: 5px;
+}
+.child_header .right{
+    border: 1px solid deepskyblue;
+    margin: 5px;
+    padding: 5px;
+
+    flex:6;
+}
+.child_header .right .title{
+    border: 1px solid deepskyblue;
+    margin: 5px;
+    padding: 5px;
+}
+.child_header .right .title span{
+    border: 1px solid deepskyblue;
+    margin: 5px;
+    padding: 5px;
+}
+.child_header .right .points{
+    border: 1px solid deepskyblue;
+    margin: 5px;
+    padding: 5px;
+}

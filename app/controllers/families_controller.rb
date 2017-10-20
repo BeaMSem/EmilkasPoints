@@ -7,10 +7,18 @@ class FamiliesController < ProtectedAreaController
   end
 
   def show
-    @family
-    @children = @family.children
-    @activities = Activity.all
-    @rewards = Reward.all
+    family = @family
+    children = @family.children
+    activities = Activity.all
+    rewards = Reward.all
+
+    @data = {
+        :family=> family,
+        :children => children,
+        :activities => activities,
+        :rewards => rewards,
+        :parent_view => session[:parent_view]
+    }
   end
 
   def create

@@ -8,7 +8,7 @@ var ChildHeader = React.createClass({
 
     renderTitle(){
         return(
-            <div className="child_greeting_container_right_title">
+            <div className="title">
                 {
                     this.props.parent_view
                     ? <div><span>{this.props.child.name}</span> has got </div>
@@ -26,30 +26,27 @@ var ChildHeader = React.createClass({
             console.log(this.state);
 
         return(
-            <div className="child_greeting_container">
-                <div className="child_greeting_container_left">
-                    <div className="child_greeting_container_left_avatar">
+            <div className="child_header">
+                <div className="left">
+                    <div className="avatar">
                         <SVG_avatar
                             svg = {this.props.child.svg}
                         />
                     </div>
                 </div>
-                <div className="child_greeting_container_right">
+                <div className="right">
                     {this.renderTitle()}
-                    <div className="child_greeting_container_right_points">{this.state.child.no_points} points!</div>
+                    <div className="points">{this.state.child.no_points} points!</div>
                 </div>
             </div>
         )
     },
     componentWillReceiveProps(nextProps){
-        console.log('ChildHeaderXXXXXX');
-        console.log('nextProps');
-        console.log(nextProps.child.no_points);
+            console.log('ChildHeader');
+            console.log('nextProps');
+            console.log(nextProps.child.no_points);
         this.setState({child: nextProps.child});
-        console.log('ChildHeaderXXXXXX');
-       console.log(this.state);
-
-
-
+            console.log('ChildHeader');
+            console.log(this.state);
     }
 });

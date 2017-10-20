@@ -1,47 +1,60 @@
 .login_form,
 .sign_up_form{
     /*border:1px solid deepskyblue;*/
-    /*margin: 5px;*/
-    /*padding: 5px;*/
+    padding: 0.5rem;
+    width: 300px;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: stretch;
 }
 .form_label_top{
-    /*border:1px solid deepskyblue;*/
-    /*margin: 5px;*/
-    /*padding: 5px;*/
+    /*border:1px solid #ff2f55;*/
+    margin: 5px;
+    padding: 0.5rem;
     display: flex;
-    flex-flow: row;
-    justify-content: center;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+
 }
 .form_label_bottom{
-    /*border:1px solid deepskyblue;*/
+    /*border:1px solid #ff3844;*/
     /*margin: 5px;*/
     /*padding: 5px;*/
     display: flex;
     flex-flow: row;
     justify-content: center;
     align-items: center;
+
 }
 .form_label{
-    /*border:1px solid deepskyblue;*/
+    /*border:1px solid #ffb523;*/
     /*margin: 5px;*/
     /*padding: 5px;*/
 }
 .the_form{
-    /*border:1px solid deepskyblue;*/
+    /*border:1px solid #ff3844;*/
     /*margin: 5px;*/
     /*padding: 5px;*/
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 .form_label_title{
-    /*border:1px solid deepskyblue;*/
+    /*border:1px solid #6bff53;*/
     /*margin: 5px;*/
     /*padding: 5px;*/
     font-size: 2rem;
+
+
 }
 .form_label_message{
-    /*border:1px solid deepskyblue;*/
+    /*border:1px solid #71ff50;*/
     /*margin: 5px;*/
     /*padding: 5px;*/
-    font-size: 1rem;
+    /*font-size: 1rem;*/
     color: grey;
 }
 .form_label_button input{
@@ -61,8 +74,10 @@
     /*margin: 5px;*/
     /*padding: 5px;*/
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
     justify-content: center;
+    align-items: center;
+    margin: 2rem;
 }
 .access_button input[type='submit']{
     /*border:1px solid orangered;*/
@@ -84,12 +99,16 @@
 }
 .form_input_field_label{
      /*border:1px solid deepskyblue;*/
-     /*margin: 5px;*/
-     /*padding: 5px;*/
-    font-size: 1rem;
+     margin: 5px;
+     padding: 5px;
+    font-size: 1.1rem;
 }
 .form_input_field_input{
     /*border:1px solid deepskyblue;*/
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-self: stretch;
     /*margin: 5px;*/
     /*padding: 5px;*/
 }
@@ -104,9 +123,8 @@
     background-color: white !important;
     border-radius: 3px;
     box-shadow: none;
-    width: 80%;
     height: 2rem;
-    font-size: 0.8rem;
+    /*font-size: 0.8rem;*/
     color: grey;
 }
 .form_input_field_input input[type='text']:focus,
