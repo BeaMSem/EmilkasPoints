@@ -1,7 +1,7 @@
 class ChildrenController < ProtectedAreaController
+
   def index
   end
-
   def show
     child = Child.find(params[:id])
     rewards = child.child_rewards
@@ -32,7 +32,7 @@ class ChildrenController < ProtectedAreaController
       end
       params[:rewards].each do |id|
         reward = Reward.find(id)
-        child_reward = ChildReward.new(
+         child_reward = ChildReward.new(
             :child => @child,
             :name => reward.name,
             :price => reward.price
@@ -47,7 +47,6 @@ class ChildrenController < ProtectedAreaController
     @activities = Activity.all
     @rewards = Reward.all
   end
-
   def edit
     
   end
@@ -57,7 +56,6 @@ class ChildrenController < ProtectedAreaController
 
     render json: child
   end
-
   def delete
   end
 

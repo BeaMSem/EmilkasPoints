@@ -12,7 +12,8 @@ var FamilyShowParentView = React.createClass({
         return({
             children: this.props.children,
             points: [5,10,20,50],
-            is_visible_form_container : false
+            is_visible_form_container : false,
+            active_index: 0
         })
     },
     toggleStateIsVisibleFormContainer(){
@@ -28,20 +29,51 @@ var FamilyShowParentView = React.createClass({
             is_visible_form_container : false
         })
     },
-    renderSingleChild(child, index){
+
+    handleOnClick(index){
+        console.log('click');
+        console.log(index);
+        this.setState({
+            active_index: index+1
+        })
+    },
+    setActiveIndexNull(){
+        console.log('active index null');
+        this.setState({
+            active_index: 0
+        })
+    },
+    renderSingleChildIndicator(child, index){
         return(
-            <ParentViewSingleChild
-                key     = {index}
-                child   = {child}
-                points  = {this.state.points}
-            />
+            <div key = {index} onClick={this.handleOnClick.bind(this, index)}>
+                <ChildHeader
+                    child   = {child}
+                    points  = {this.state.points}
+                    parent_view = {true}
+                />
+            </div>
+
         )
     },
-    renderChildren(){
+    renderWelcomeMessage(){
+        return(
+            <div>Welcome message</div>
+        )
+    },
+    renderChildrenIndicators(){
         return(
         <div>
-        {this.state.children.map(this.renderSingleChild)}
+            {this.state.children.map(this.renderSingleChildIndicator)}
         </div>
+        )
+    },
+    renderSingleChild(){
+        return(
+            <ParentViewSingleChild
+                child   = {this.props.children[this.state.active_index - 1]}
+                points  = {this.state.points}
+                setActiveIndexNull = {this.setActiveIndexNull}
+            />
         )
     },
     render(){
@@ -52,7 +84,12 @@ var FamilyShowParentView = React.createClass({
 
         return(
             <div>
-                {this.renderChildren()}
+                {
+                    this.state.active_index === 0
+                        ? this.state.children.length === 0 ? this.renderWelcomeMessage() : this.renderChildrenIndicators()
+                        : this.renderSingleChild()
+                }
+
                 <div className="children_new_form_container">
                     <div className="light_box">light_box</div>
                     <div className="the_form">
@@ -67,7 +104,7 @@ var FamilyShowParentView = React.createClass({
                         }
 
                     </div>
-                    <div><input type="button" value="cancel" onClick={this.toggleStateIsVisibleFormContainer}/></div>
+                    <div><input type="button" value="Add New Child" onClick={this.toggleStateIsVisibleFormContainer}/></div>
                 </div>
 
             </div>

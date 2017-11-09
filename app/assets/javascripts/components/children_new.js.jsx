@@ -168,13 +168,13 @@ var ChildrenNew = React.createClass({
                 <div className="children_new_navigation">
                   Add Child
                 </div>
-                <div className="children_new_form">
+                <div className="the_form">
                     <form>
                         <div className="form_input_field">
-                            <div className="children_new_input_field_label">
+                            <div className="input_field_label">
                                 <label htmlFor="name">Child's Name:</label>
                             </div>
-                            <div className="children_new_input_field_input">
+                            <div className="form_input_field_input">
                                 <input
                                     type="text"
                                     name="name"
@@ -185,13 +185,13 @@ var ChildrenNew = React.createClass({
                             </div>
                         </div>
                         <div className="form_input_field">
-                            <div className="children_new_input_field_label">
+                            <div className="input_field_label">
                                 <label htmlFor="avatar">Child's Avatar:</label>
                             </div>
                             {this.renderAvatars()}
                         </div>
                         <div className="form_input_field">
-                            <div className="children_new_input_field_label">
+                            <div className="input_field_label">
                                 <label htmlFor="avatar">Child's Activities:</label>
                             </div>
                             {this.renderChildrenActivities()}

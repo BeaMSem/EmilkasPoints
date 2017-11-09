@@ -1,5 +1,4 @@
-.login_form,
-.sign_up_form{
+.form_wrapper{
     /*border:1px solid deepskyblue;*/
     padding: 0.5rem;
     width: 300px;
@@ -8,7 +7,8 @@
     justify-content: flex-start;
     align-items: stretch;
 }
-.form_label_top{
+
+.form_header .top{
     /*border:1px solid #ff2f55;*/
     margin: 5px;
     padding: 0.5rem;
@@ -18,7 +18,7 @@
     align-items: center;
 
 }
-.form_label_bottom{
+.form_header .bottom{
     /*border:1px solid #ff3844;*/
     /*margin: 5px;*/
     /*padding: 5px;*/
@@ -28,21 +28,7 @@
     align-items: center;
 
 }
-.form_label{
-    /*border:1px solid #ffb523;*/
-    /*margin: 5px;*/
-    /*padding: 5px;*/
-}
-.the_form{
-    /*border:1px solid #ff3844;*/
-    /*margin: 5px;*/
-    /*padding: 5px;*/
-    display: flex;
-    flex-flow: column;
-    justify-content: flex-start;
-    align-items: center;
-}
-.form_label_title{
+.form_header .title{
     /*border:1px solid #6bff53;*/
     /*margin: 5px;*/
     /*padding: 5px;*/
@@ -50,14 +36,14 @@
 
 
 }
-.form_label_message{
+.form_header .message{
     /*border:1px solid #71ff50;*/
     /*margin: 5px;*/
     /*padding: 5px;*/
     /*font-size: 1rem;*/
     color: grey;
 }
-.form_label_button input{
+.form_header .button input{
     /*border:1px solid deepskyblue;*/
     /*margin: 5px;*/
     /*padding: 5px;*/
@@ -69,7 +55,43 @@
 
 }
 
-.access_button{
+.the_form{
+    /*border:1px solid #ff3844;*/
+    /*margin: 5px;*/
+    /*padding: 5px;*/
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.the_form .field{
+    /*border:1px solid #ff5533;*/
+    /*margin: 5px;*/
+    /*padding: 5px;*/
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-self: stretch;
+}
+.the_form .field .label{
+    /*margin: 5px;*/
+    /*padding: 5px;*/
+    font-size: 1.1rem;
+}
+.the_form .field .input{
+    /*border:1px solid #ff206b;*/
+    /*margin: 5px;*/
+    /*padding: 5px;*/
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-self: stretch;
+}
+.the_form .field .errors{
+    /*border:1px solid #ff050e;*/
+}
+
+.submit{
     /*border:1px solid deepskyblue;*/
     /*margin: 5px;*/
     /*padding: 5px;*/
@@ -79,7 +101,7 @@
     align-items: center;
     margin: 2rem;
 }
-.access_button input[type='submit']{
+.submit input[type='submit']{
     /*border:1px solid orangered;*/
     /*margin: 5px;*/
     /*padding: 5px;*/
@@ -92,45 +114,5 @@
     width: 12rem;
     height: 2.5rem;
 }
-.form_input_field{
-    /*border:1px solid deepskyblue;*/
-    /*margin: 5px;*/
-    /*padding: 5px;*/
-}
-.form_input_field_label{
-     /*border:1px solid deepskyblue;*/
-     margin: 5px;
-     padding: 5px;
-    font-size: 1.1rem;
-}
-.form_input_field_input{
-    /*border:1px solid deepskyblue;*/
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-self: stretch;
-    /*margin: 5px;*/
-    /*padding: 5px;*/
-}
-.form_input_field_input input[type='text'],
-.form_input_field_input input[type='password']{
-    border:none;
-    margin: 0;
-    padding: 3px;
-    /*border:1px solid orangered;*/
-    /*margin: 5px;*/
-    /*padding: 5px;*/
-    background-color: white !important;
-    border-radius: 3px;
-    box-shadow: none;
-    height: 2rem;
-    /*font-size: 0.8rem;*/
-    color: grey;
-}
-.form_input_field_input input[type='text']:focus,
-.form_input_field_input input[type='password']:focus{
-    outline: none;
-}
-input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 1000px white inset !important;
-}
+
+

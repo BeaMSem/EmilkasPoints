@@ -16,98 +16,75 @@ var RegistrationForm = React.createClass({
     },
     render(){
         return(
-            <div className="sign_up_form">
-                <div className="form_label">
-                    <div className="form_label_top">
-                        <div className="form_label_title">Sign Up</div>
+            <div className="form_wrapper">
+
+                <div className="form_header">
+                    <div className="top">
+                        <div className="title">Sign Up</div>
                     </div>
-                    <div className="form_label_bottom">
-                        <div className="form_label_message">Already have an account?</div>
-                        <div className="form_label_button">
+                    <div className="bottom">
+                        <div className="message">Already have an account?</div>
+                        <div className="button">
                             <input
                                 type="button"
-                                value="Log In"
+                                value='Log In'
                                 onClick={this.props.setLoginStateTrue}
-                                className="box_like navy"
                             />
                         </div>
                     </div>
                 </div>
                 <div className="the_form">
-                    <form method="post" action="/families">
-                        <div>{this.state.errors.name}</div>
-
-
-                        <div className="form_input_field">
-                            <div className="form_input_field_label">
-                                <label htmlFor="name">Name:</label>
-                            </div>
-                            <div className="form_input_field_input">
+                    <form action="/families" method="post">
+                        <div className="field">
+                            <div className="label"><label htmlFor="name">Name:</label></div>
+                            <div className="input">
                                 <input
                                     type="text"
                                     name="name"
                                     ref="name"
-                                    placeholder="enter your name"
+                                    // placeholder="enter your name"
                                     value = {this.state.name}
                                     onChange={this.handleChange}
                                 />
                             </div>
+                            <div className="errors">{this.state.errors.name}</div>
                         </div>
-                        <div className="form_input_field">
-                            <div className="form_input_field_label">
-                                <label htmlFor="email">Email:</label>
-                            </div>
-                            <div className="form_input_field_input">
+                        <div className="field">
+                            <div className="label"><label htmlFor="email">Email:</label></div>
+                            <div className="input">
                                 <input
                                     type="text"
                                     name="email"
                                     ref="email"
-                                    placeholder="enter your email"
+                                    // placeholder="enter your email"
                                     value = {this.state.email}
                                     onChange={this.handleChange}
                                 />
                             </div>
+                            <div className="errors">{this.state.errors.name}</div>
                         </div>
-                        <div className="form_input_field">
-                            <div className="form_input_field_label">
-                                <label htmlFor="password">Password:</label>
-                            </div>
-                            <div className="form_input_field_input">
+                        <div className="field">
+                            <div className="label"><label htmlFor="password">Password:</label></div>
+                            <div className="input">
                                 <input
-                                    type="password"
+                                    type="text"
                                     name="password"
                                     ref="password"
-                                    placeholder="enter your password"
+                                    // placeholder="enter your password"
                                     value = {this.state.password}
                                     onChange={this.handleChange}
                                 />
                             </div>
+                            <div className="errors">{this.state.errors.name}</div>
                         </div>
-
-                        <div className="form_input_field">
-                            <div className="form_input_field_label">
-                                <label htmlFor="password">Family Member Pin:</label>
-                            </div>
-                            <div className="form_input_field_input">
-                                <input
-                                    type="text"
-                                    name="pin"
-                                    ref="pin"
-                                    value = {this.state.pin}
-                                    onChange={this.handleChange}
-                                />
-                            </div>
-                        </div>
-                        <div className="access_button">
+                        <div className="submit">
                             <input
                                 type="submit"
                                 value='Sign In'
-                                className="box_like navy"
                             />
                         </div>
                     </form>
                 </div>
-
             </div>
         )
     }

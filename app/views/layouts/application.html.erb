@@ -5,24 +5,25 @@
     <%= csrf_meta_tags %>
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Terminal+Dosis" />
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track'=> true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track'=> true %>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   </head>
 
   <body>
-  <div class="app">
-    <div class="header">
-      <%= link_to 'App Name', root_path %>
-      <%= link_to 'logout', logout_path %>
+    <div class="app">
+      <div class="header">
+        <%= link_to 'App Name', root_path %>
+        <%= link_to 'logout', logout_path %>
+      </div>
+      <div class="content">
+        <%= yield %>
+
+      </div>
+      <div class="footer">
+        footer
+      </div>
     </div>
-    <div class="content">
-      <%= yield %>
-    </div>
-    <div class="footer">
-      footer
-    </div>
-  </div>
   </body>
 </html>

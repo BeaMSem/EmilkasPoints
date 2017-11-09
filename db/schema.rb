@@ -31,25 +31,6 @@ ActiveRecord::Schema.define(version: 20170921123238) do
     t.datetime "updated_at",                  null: false
   end
 
-  create_table "child_activity_pairs", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer  "child_id"
-    t.integer  "activity_id"
-    t.integer  "multiplier",   default: 1
-    t.integer  "multiplicand", default: 5
-    t.string   "name"
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
-  end
-
-  create_table "child_reward_pairs", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer  "child_id"
-    t.integer  "reward_id"
-    t.integer  "price"
-    t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "child_rewards", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "name"
     t.integer  "child_id"

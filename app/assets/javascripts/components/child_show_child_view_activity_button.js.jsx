@@ -44,57 +44,38 @@ var ChildActivityButton = React.createClass({
             }
         });
     },
-    renderChildSingleActivityTop(){
-        return(
-            <div className="child_single_activity_top">
-                <div className="child_single_activity_top_svg">
-                    <SVG_activity svg={this.props.child_activity.svg}/>
-                </div>
-                <div className="child_single_activity_top_title">
-                    {this.props.child_activity.name}
-                </div>
-            </div>
-        )
-    },
-    renderChildSingleActivityActive(){
+
+    renderActivityButton(){
         return(
             <div
-                className   = "child_single_activity"
-                onClick     = {this.handleOnClick}
+                className="activity_button"
+                onClick={this.state.active ? this.handleOnClick : this.handleOnClickRemovePoints}
             >
-                <div className="child_single_activity_top">
-                    {this.renderChildSingleActivityTop()}
-                </div>
-                <div className="child_single_activity_bottom">
-                    <div className="child_single_activity_bottom_points">
-                        + {(this.state.multiplier)*(this.props.child_activity.multiplicand)} points
+                <div className="top">
+                    <div className="svg">
+                        <SVG_activity svg={this.props.child_activity.svg}/>
+                    </div>
+                    <div className="title">
+                        {this.props.child_activity.name}
                     </div>
                 </div>
-            </div>
-        )
-    },
-    renderChildSingleActivityInactive(){
-        return(
-            <div
-                className   = "child_single_activity"
-                onClick     = {this.handleOnClickRemovePoints}
-            >
-                <div className="child_single_activity_top">
-                    {this.renderChildSingleActivityTop()}
+                <div className="bottom">
+                    {   this.state.active
+                        ?   <div className="points">
+                                + {(this.state.multiplier)*(this.props.child_activity.multiplicand)} points
+                            </div>
+                        :   <div className="tick">
+                            V
+                            </div>
+                    }
                 </div>
-                <div className="child_single_activity_bottom">
-                    <div className="child_single_activity_bottom_tick">
-                        well done
-                    </div>
-                </div>
+
             </div>
         )
     },
     render(){
         return(
-            this.state.active
-                ? this.renderChildSingleActivityActive()
-                : this.renderChildSingleActivityInactive()
+           this.renderActivityButton()
         )
     }
 

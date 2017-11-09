@@ -1,0 +1,39 @@
+.additional_points_box{
+    border: 1px solid deeppink;
+    margin: 5px;
+    padding: 5px;
+
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+.additional_points{
+    border: 1px solid deeppink;
+    margin: 5px;
+    padding: 5px;
+}
+.additional_points .top{
+    border: 1px solid deeppink;
+    margin: 5px;
+    padding: 5px;
+}
+.additional_points .top .number{
+    border: 1px solid deeppink;
+    margin: 5px;
+    padding: 5px;
+}
+.additional_points .top .points_text{
+    border: 1px solid deeppink;
+    margin: 5px;
+    padding: 5px;
+}
+.additional_points .bottom{
+    border: 1px solid deeppink;
+    margin: 5px;
+    padding: 5px;
+}
+.additional_points .bottom .add{
+    border: 1px solid deeppink;
+    margin: 5px;
+    padding: 5px;
+}

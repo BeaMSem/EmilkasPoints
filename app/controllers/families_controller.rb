@@ -25,6 +25,7 @@ class FamiliesController < ProtectedAreaController
       family = Family.new(family_params)
       if family.save
         session[:family_id] = family.id
+        session[:parent_view] = true
         redirect_to(family_path(family.id))
       end
   end

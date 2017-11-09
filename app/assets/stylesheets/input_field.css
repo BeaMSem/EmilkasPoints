@@ -1,0 +1,21 @@
+input[type='text'],
+input[type='password']{
+    border:none;
+    margin: 0;
+    padding: 3px;
+    background-color: white !important;
+    border-radius: 3px;
+    box-shadow: none;
+    height: 2rem;
+    font-size:0.9rem;
+    font-weight:lighter;
+    color: grey;
+    width: 100%;
+}
+input[type='text']:focus,
+input[type='password']:focus{
+    outline: none;
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+}

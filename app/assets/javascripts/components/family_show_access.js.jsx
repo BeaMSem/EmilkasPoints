@@ -21,8 +21,8 @@ var FamilyShowAccess = React.createClass({
         });
     },
     render(){
-        // console.log('FamilyShowAccess- this.props');
-        // console.log(this.props);
+        console.log('FamilyShowAccess- this.props');
+        console.log(this.props);
         // console.log('FamilyShowAccess- this.state');
         // console.log(this.state);
 
@@ -33,15 +33,21 @@ var FamilyShowAccess = React.createClass({
                         type="button"
                         value="parent"
                         onClick={this.onClickSessionSetStateParentView}
-                    /></div>
+                    />
+                </div>
                 <div>
                     {
-                        this.props.children.map(function(child, index){
-
+                        this.props.children.map(function(child){
                             return (
-                                <div key = {index}>
-                                    <a href={"../children/"+ child.id}>{child.name}</a>
-                                </div>
+                                <a href={"/children/" + child.id} key={child.id}>
+                                    <div key={child.id}>
+                                        <SVG_avatar
+                                            svg = {child.svg}
+                                        />
+                                    {child.name}
+                                    </div>
+                                </a>
+
                             )
                         })
                     }

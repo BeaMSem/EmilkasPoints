@@ -20,6 +20,7 @@ var ParentViewSingleChild = React.createClass({
             <div className="child_header">
                 <ChildHeader
                     child = {this.state.child}
+                    parent_view = {true}
                 />
             </div>
         )
@@ -52,17 +53,17 @@ var ParentViewSingleChild = React.createClass({
     },
     renderSinglePointBox(points, index){
         return(
-            <div
+            <Points
                 key={index}
-                onClick={this.updatePoints.bind(this, points)}
-            >
-                {points}
-            </div>
+                points = {points}
+                updatePoints = {this.updatePoints}
+
+            />
         )
     },
     renderMapPoints(){
         return(
-            <div className="extra_points">
+            <div className="additional_points_box">
                 {this.props.points.map(this.renderSinglePointBox)}
             </div>
 
@@ -89,6 +90,7 @@ var ParentViewSingleChild = React.createClass({
         // console.log(this.state);
         return(
             <div>
+                <div onClick={this.props.setActiveIndexNull}>BACK</div>
                 {this.renderChildHeader()}
                 {this.renderMapPoints()}
                 {this.renderChildEdit()}

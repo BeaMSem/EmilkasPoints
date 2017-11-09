@@ -13,12 +13,11 @@
 #   rake "some:great:rake:task"
 # end
 #
-every '0,30 * * * *' do
-  command 'cd /Users/bea/Sites_RR/EmilkaPoints && rake activities:set_active'
+every 15.minutes do
+  command 'cd /Users/Bea/Rails/EmilkaPoints && RAILS_ENV=development bundle exec rake activities:set_active'
 end
-
-every '5 12 * * *' do
-  command 'cd /Users/bea/Sites_RR/EmilkaPoints && rake activities:weekly_reset'
+every 3.hours do
+  command 'cd /Users/Bea/Rails/EmilkaPoints && RAILS_ENV=development bundle exec rake activities:weekly_reset'
 end
 
 # Learn more: http://github.com/javan/whenever

@@ -35,12 +35,7 @@ var AccessPage = React.createClass({
         )
     },
     renderPublicArea(){
-        return(
-            <div className="app">
-                {this.renderAppropriateForm()}
-            </div>
-
-        )
+        return(this.renderAppropriateForm());
     },
     render(){
         return(this.renderPublicArea())
