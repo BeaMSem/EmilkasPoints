@@ -8,7 +8,7 @@ var ChildHeader = React.createClass({
     renderAvatar(){
         return(
             <div className="left">
-                <div className="avatar">
+                <div className="child_avatar">
                     <SVG_avatar
                         svg = {this.props.child.svg}
                     />

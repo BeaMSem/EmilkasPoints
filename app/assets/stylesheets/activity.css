@@ -1,0 +1,32 @@
+.single_activity{
+    border: 1px solid green;
+    box-sizing: border-box;
+    width: 28vmin;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 3px;
+    background-color: #daf2f8;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.activity_name{
+    font-size: 2vmax;
+    border: 1px solid orange;
+    margin: 2vmin 0;
+}
+.svg_activity{
+    border: 1px solid deeppink;
+    width: 85%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.svg_activity{
+    box-sizing: border-box;
+    padding: 2vmin;
+}

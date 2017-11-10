@@ -1,5 +1,5 @@
 .child_activities_container{
-    border: 1px solid #67ff5a;
+    border: 1px solid deeppink;
     /*margin: 5px;*/
     /*padding: 5px;*/
     display: flex;
@@ -17,37 +17,5 @@
     border-radius: 3px;
 
 }
-.child_single_activity_top{
-    /*border: 1px solid deepskyblue;*/
-    /*margin: 5px;*/
-    /*padding: 5px;*/
-}
-.child_single_activity_top_svg{
-    /*border: 1px solid deepskyblue;*/
-    /*margin: 5px;*/
-}
-.child_single_activity_top_title{
-    /*border: 1px solid deepskyblue;*/
-    /*margin: 5px;*/
-    /*padding: 5px;*/
-    font-size: 0.9em;
-    color: #666666;
-}
-.child_single_activity_bottom{
-    /*border: 1px solid deepskyblue;*/
-    /*margin: 5px;*/
-    /*padding: 5px;*/
-}
-.child_single_activity_bottom_points{
-    /*border: 1px solid deepskyblue;*/
-    /*margin: 5px;*/
-    /*padding: 5px;*/
-    background-color: yellowgreen;
-    color:white;
-    font-size: 1.5em;
-}
-.child_single_activity_bottom_tick{
-    /*border: 1px solid deepskyblue;*/
-    /*margin: 5px;*/
-    /*padding: 5px;*/
-}
+
+

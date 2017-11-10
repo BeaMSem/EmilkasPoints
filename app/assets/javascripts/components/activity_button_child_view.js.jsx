@@ -1,4 +1,4 @@
-var ChildActivityButton = React.createClass({
+var ActivityButtonChildView = React.createClass({
 
     getInitialState(){
         return({
@@ -6,7 +6,7 @@ var ChildActivityButton = React.createClass({
             active: this.props.child_activity.active
         })
     },
-    handleOnClick(){
+    handleOnClickAddPoints(){
         $.ajax({
             url: '/child_activities/'+this.props.child_activity.id,
             method: 'PUT',
@@ -48,36 +48,27 @@ var ChildActivityButton = React.createClass({
     renderActivityButton(){
         return(
             <div
-                className="activity_button"
-                onClick={this.state.active ? this.handleOnClick : this.handleOnClickRemovePoints}
+                className="activity_button_child_view"
+                onClick={this.state.active ? this.handleOnClickAddPoints : this.handleOnClickRemovePoints}
             >
-                <div className="top">
-                    <div className="svg">
-                        <SVG_activity svg={this.props.child_activity.svg}/>
-                    </div>
-                    <div className="title">
-                        {this.props.child_activity.name}
-                    </div>
-                </div>
-
-
+                {this.props.children}
                 <div className="bottom">
-                    {   this.state.active
+                    {
+                        this.state.active
                         ?   <div className="points">
                                 + {(this.state.multiplier)*(this.props.child_activity.multiplicand)} points
                             </div>
                         :   <div className="tick">
-                            V
+                                V
                             </div>
                     }
                 </div>
-
             </div>
         )
     },
     render(){
         return(
-           this.renderActivityButton()
+            this.renderActivityButton()
         )
     }
 

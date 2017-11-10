@@ -1,0 +1,25 @@
+.activity_button{
+    /*border: 1px solid #ffba20;*/
+    padding: 5px;
+    background-color: #dff2f7;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.activity_button .svg{
+    /*border: 1px solid deeppink;*/
+    margin: 5px;
+    padding: 5px;
+    width: 3rem;
+    height: 3rem;
+}
+.activity_button .title{
+    /*border: 1px solid #ff363b;*/
+    margin-bottom: 5px;
+    /*padding: 5px;*/
+    font-size: 0.75rem;
+    color: gray;
+    text-align: center;
+}

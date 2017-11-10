@@ -1,0 +1,22 @@
+.child_avatar .svg{
+    margin: 5px;
+    padding: 5px;
+    width: 90%;
+    height: 90%;
+
+    border: 1px solid deeppink;
+}
+.child_avatar{
+    width: 5rem;
+    height: 5rem;
+
+    border: 1px solid orange;
+    border-radius: 5px;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+
+}

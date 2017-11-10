@@ -48,7 +48,11 @@ var ChildrenNew = React.createClass({
             avatar_svg: svg
         })
     },
+
     handleOnClickAddActivities(activity){
+
+        console.log('XXXXX');
+        console.log(activity);
 
         var activities_array_od_ids = this.state.activities;
         activities_array_od_ids.push(activity.id);
@@ -70,6 +74,7 @@ var ChildrenNew = React.createClass({
             activities: activities_array_od_ids
         })
     },
+
     handleOnClickAddReward(reward){
 
         var rewards_ids = this.state.rewards;
@@ -97,19 +102,19 @@ var ChildrenNew = React.createClass({
         state[e.target.name] = e.target.value;
         this.setState(state);
     },
-    renderSingleActivity(activity,index){
+    renderSingleActivity(child_activity,index){
         return(
-            <ChildrenNewActivityButton
-                activity = {activity}
+            <ActivityButtonFormView
                 key = {index}
                 handleOnClickAddActivities = {this.handleOnClickAddActivities}
                 removeActivity = {this.removeActivity}
+                child_activity = {child_activity}
             >
-                <SVG_activity
-                    svg = {activity.svg}
-                />
-            </ChildrenNewActivityButton>
+                <ActivityButton
+                    child_activity = {child_activity}
 
+                />
+            </ActivityButtonFormView>
 
         )
     },
@@ -123,18 +128,13 @@ var ChildrenNew = React.createClass({
     renderSingleAvatar(avatar,index){
         return(
             <div
-                className="single_avatar"
+                className="child_avatar_form_view"
                 key = {index}
                 onClick={this.handleOnClickSelectAvatar.bind(this,avatar)}
             >
-                    <div className="svg_avatar">
-                        {
-                            <SVG_avatar
-                                svg = {avatar}
-                                key = {index}
-                            />
-                        }
-                    </div>
+                <ChildAvatar
+                svg={avatar}
+                />
             </div>
 
         )

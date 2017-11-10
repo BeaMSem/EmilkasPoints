@@ -14,7 +14,7 @@ var ChildShowChildView = React.createClass({
     },
     renderSingleActivity(child_activity, index){
             return(
-                <ChildActivityButton
+                <ActivityButtonChildView
                     key = {index}
                     child_activity = {child_activity}
                     updatePoints = {this.props.updatePoints}

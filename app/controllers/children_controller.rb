@@ -7,7 +7,7 @@ class ChildrenController < ProtectedAreaController
     rewards = child.child_rewards
     activities = child.child_activities
     @data = {
-        :child=> child,
+        :child => child,
         :child_rewards => rewards,
         :child_activities => activities,
         :parent_view => session[:parent_view]

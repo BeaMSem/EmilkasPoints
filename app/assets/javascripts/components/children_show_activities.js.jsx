@@ -1,31 +1,17 @@
-var ChildShowActivities = React.createClass({
+var ChildrenShowActivities = React.createClass({
 
-    // {    this.state.open ? 'true' : 'false'  }
-    // {    this.setState({  })}
-    // function(){console.log('function - '); console.log(); console.log(); return(<div>function</div>)},
-    // console.log();
-    // console.log();
-    // this.props.xxxxxx
-    // this.state.xxxxxx
-
-    getInitialState(){
-        return({
-            null
-        })
-    },
-    toggleActivitiesView(){
-        this.setState({
-            activities_view: !this.state.activities_view
-        })
-    },
     renderSingleActivity(child_activity, index){
         return(
-            <ChildActivityButton
+            <ActivityButtonChildView
                 key = {index}
                 child_activity = {child_activity}
                 updatePoints = {this.props.updatePoints}
                 updateChildActivitiesState = {this.props.updateChildActivitiesState}
-            />
+            >
+                <ActivityButton
+                    child_activity = {child_activity}
+                />
+            </ActivityButtonChildView>
         )
     },
     renderDailyActivities(){

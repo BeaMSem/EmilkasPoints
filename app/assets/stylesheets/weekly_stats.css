@@ -12,19 +12,6 @@
     /*border: 1px solid blue;*/
     display: flex;
     flex-flow: row;
+    margin: 0.2em 0px;
 }
 
-.achievement_icon{
-    /*border: 2px solid deepskyblue;*/
-    background-color: #d0eff7;
-    /*padding: 5px;*/
-    /*margin: 5px;*/
-    width: 2em;
-    height: 2em;
-}
-.achievement_icon.active{
-    opacity: 1;
-}
-.achievement_icon.inactive{
-    opacity: 0.2;
-}

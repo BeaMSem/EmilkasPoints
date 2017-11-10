@@ -1,0 +1,11 @@
+.activity_button_form_view.selected {
+    opacity: 0.3;
+}
+.activity_button_form_view{
+    /*border: 1px solid deeppink;*/
+    margin: 4px;
+    width: 6rem;
+}
+.activity_button_form_view .activity_button{
+    border-radius: 5px;
+}

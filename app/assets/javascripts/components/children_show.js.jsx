@@ -11,6 +11,7 @@ var ChildShow = React.createClass({
     toggleRewardsView(){
         this.setState({rewards_view:!this.state.rewards_view})
     },
+
     updateChildActivitiesState(child_activity){
         var array = this.state.child_activities;
         var index = array.findIndex(function(element){
@@ -18,7 +19,7 @@ var ChildShow = React.createClass({
         });
         array[index] = child_activity;
         this.setState({
-            child_activity: array
+            child_activities: array
         })
     },
     updatePoints(points){
@@ -47,6 +48,12 @@ var ChildShow = React.createClass({
             }
         })
     },
+
+
+
+
+
+
     renderChildHeader(){
         return(
             <ChildHeader
@@ -56,7 +63,7 @@ var ChildShow = React.createClass({
     },
     renderChildActivities(){
         return(
-            <ChildShowActivities
+            <ChildrenShowActivities
                 child_activities = {this.state.child_activities}
                 updatePoints = {this.updatePoints}
                 updateChildActivitiesState = {this.updateChildActivitiesState}
