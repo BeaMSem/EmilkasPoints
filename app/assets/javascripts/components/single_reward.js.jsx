@@ -1,13 +1,5 @@
 var SingleReward = React.createClass({
 
-    // {    this.state.open ? 'true' : 'false'  }
-    // {    this.setState({  })}
-    // function(){console.log('function - '); console.log(); console.log(); return(<div>function</div>)},
-    // console.log();
-    // console.log();
-    // this.props.xxxxxx
-    // this.state.xxxxxx
-
     getInitialState(){
         return({
             no_points: this.props.child.no_points,
@@ -31,9 +23,12 @@ var SingleReward = React.createClass({
         console.log(this.state);
 
         return(
-            <div onClick={this.state.available ? this.handleOnClick : false}>
-                {this.props.reward.name}
-                {this.state.available ? this.renderRewardPrice() : this.renderMissingPoints()}
+            <div
+                onClick={this.state.available ? this.handleOnClick : false}
+                className="reward"
+            >
+                <div className="title">{this.props.reward.name}</div>
+                <div className="price">{this.state.available ? this.renderRewardPrice() : this.renderMissingPoints()}</div>
             </div>
         )
     },

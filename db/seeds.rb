@@ -26,20 +26,21 @@ end
 
 
 rewards = [
-    {:name => '£1', :price => 60},
-    {:name => '£2', :price => 120},
-    {:name => '£5', :price => 300},
-    {:name => '£10', :price => 600},
-    {:name => '15 minutes', :price => 15},
-    {:name => '30 minutes', :price => 30},
-    {:name => '45 minutes', :price => 45},
-    {:name => '60 minutes', :price => 60},
+    {:name => '£1', :price => 60, :background_color=>'#85cc3e'},
+    {:name => '£2', :price => 120, :background_color=>'#85cc3e'},
+    {:name => '£5', :price => 300, :background_color=>'#85cc3e'},
+    {:name => '£10', :price => 600, :background_color=>'#85cc3e'},
+    {:name => "15'", :price => 15, :background_color => '#5bc9cb'},
+    {:name => "30'", :price => 30, :background_color => '#5bc9cb'},
+    {:name => "45'", :price => 45, :background_color => '#5bc9cb'},
+    {:name => "60'", :price => 60, :background_color => '#5bc9cb'},
 
 ]
 rewards.each_with_index do |reward_item, index|
   reward = Reward.create(
       :name => reward_item[:name],
-      :price => reward_item[:price]
+      :price => reward_item[:price],
+      :background_color =>reward_item[:background_color]
   )
 end
 

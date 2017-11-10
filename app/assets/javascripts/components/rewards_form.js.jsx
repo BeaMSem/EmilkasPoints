@@ -1,4 +1,4 @@
-var RewardsForm = React.createClass({
+var RewardsFormView = React.createClass({
 
     // {    this.state.open ? 'true' : 'false'  }
     // {    this.setState({  })}
@@ -20,21 +20,22 @@ var RewardsForm = React.createClass({
     renderActive(){
         return(
             <div
-                className="active"
+                className="reward active"
                 onClick={this.toggleActive}
             >
-                {this.props.reward.name}
-                {this.props.reward.price}
+                <div className="title">{this.props.reward.name}</div>
+                <div className="price">{this.props.reward.price}</div>
             </div>
         )
     },
     renderNotActive(){
         return(
             <div
+                className="reward"
                 onClick={this.toggleActive}
             >
-                {this.props.reward.name}
-                {this.props.reward.price}
+                <div className="title">{this.props.reward.name}</div>
+                <div className="price">{this.props.reward.price}</div>
             </div>
         )
     },

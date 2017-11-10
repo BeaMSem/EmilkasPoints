@@ -1,50 +1,30 @@
-.child_rewards{
-    border: 1px solid green;
+.reward{
+    /*border:1px solid deeppink;*/
+    /*margin: 5px;*/
+    /*padding: 5px;*/
+}
+.reward .title{
+    /*border:1px solid #85cc3e;*/
     margin: 5px;
+    padding: 5px;
+    text-align: center;
+    font-size: 2.2rem;
+    color: white;
+}
+.reward .price{
+    /*border:1px solid deeppink;*/
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
+.rewards_form_view_container{
+    /*border:1px solid #5bc9cb;*/
+    margin: 5px;
+    padding: 5px;
+
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-}
-.child_single_reward{
-    border: 1px solid deepskyblue;
-    position: relative;
-    display: flex;
-    flex-flow: column;
-    padding: 5px;
-    margin: 10px;
-    border-radius: 9px;
-    color: white;
-    background-color: #00cccc;
-    width: 45%;
-}
-.content{
-    display: flex;
-    flex-flow: row;
     justify-content: center;
-    align-items: center;
-    padding: 0.25em;
-    border: 1px solid orangered;
-}
-.reward_name{
-    border: 1px solid orangered;
-    padding: 5px;
-    font-size: 4em;
-    border-radius: 9px 9px 0 0;
-}
-.reward_price{
-    border: 1px solid orangered;
-    padding: 5px;
-    border-radius: 0 0 9px 9px;
-    font-size: 2.5em;
-    font-weight:200;
 
-}
-.blocked_icon{
-    border: 1px solid yellowgreen;
-    position: absolute;
-    top:0px;
-    right:0px;
-    padding: 5px;
-    font-size: 2.5em;
 }

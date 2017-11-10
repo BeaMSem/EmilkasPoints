@@ -110,10 +110,7 @@ var ChildrenNew = React.createClass({
                 removeActivity = {this.removeActivity}
                 child_activity = {child_activity}
             >
-                <ActivityButton
-                    child_activity = {child_activity}
-
-                />
+                <ActivityButton child_activity = {child_activity} />
             </ActivityButtonFormView>
 
         )
@@ -148,12 +145,14 @@ var ChildrenNew = React.createClass({
     },
     renderRewards(){
         return(
-            <div>{this.props.rewards.map(this.renderSingleReward)}</div>
+            <div className="rewards_form_view_container">
+                {this.props.rewards.map(this.renderSingleReward)}
+                </div>
         )
     },
     renderSingleReward(reward, index){
             return(
-                <RewardsForm
+                <RewardFormView
                     key = {reward.id}
                     reward = {reward}
                     handleOnClickAddReward = {this.handleOnClickAddReward}

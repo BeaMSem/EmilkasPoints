@@ -1,0 +1,9 @@
+.reward_form_view.selected{
+    opacity: 0.3;
+}
+.reward_form_view{
+    /*border: 1px solid rebeccapurple;*/
+    border-radius: 5px;
+    width: 6rem;
+    margin: 4px;
+ }

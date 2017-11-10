@@ -4,6 +4,7 @@ class CreateRewards < ActiveRecord::Migration[5.0]
       t.integer :family_id
       t.integer :price
       t.string :name
+      t.string :background_color
       t.timestamps
     end
   end

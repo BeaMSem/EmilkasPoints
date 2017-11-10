@@ -1,19 +1,8 @@
 var ChildShowRewards = React.createClass({
 
-    // {    this.state.open ? 'true' : 'false'  }
-    // {    this.setState({  })}
-    // function(){console.log('function - '); console.log(); console.log(); return(<div>function</div>)},
-    // console.log();
-    // console.log();
-    // this.props.xxxxxx
-    // this.state.xxxxxx
-
-    getInitialState(){
-        return({ null })
-    },
     renderSingleReward(reward){
         return(
-            <SingleReward
+            <Reward
                 key = {reward.id}
                 reward = {reward}
                 child = {this.props.child}
@@ -29,10 +18,10 @@ var ChildShowRewards = React.createClass({
         )
     },
     render(){
-        console.log('ChildShowRewards- this.props');
-        console.log(this.props);
-        console.log('ChildShowRewards- this.state');
-        console.log(this.state);
+        // console.log('ChildShowRewards- this.props');
+        // console.log(this.props);
+        // console.log('ChildShowRewards- this.state');
+        // console.log(this.state);
 
         return(<div>
             {this.renderRewards()}
@@ -41,4 +30,3 @@ var ChildShowRewards = React.createClass({
 
 
 });
-{/*<%= react_component 'ChildShowRewards',         %>*/}

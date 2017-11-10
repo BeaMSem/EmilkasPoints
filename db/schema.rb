@@ -62,8 +62,9 @@ ActiveRecord::Schema.define(version: 20170921123238) do
     t.integer  "family_id"
     t.integer  "price"
     t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "background_color"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
   end
 
 end

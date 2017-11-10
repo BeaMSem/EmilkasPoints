@@ -17,10 +17,10 @@
 }
 .additional_points .top{
     /*border: 1px solid deeppink;*/
-    border-radius: 5px 5px 0 0;
     /*margin: 5px;*/
     /*padding: 5px;*/
     background-color: #e9eaee;
+    border-radius: 5px 5px 0 0;
 }
 .additional_points .top .number{
     /*border: 1px solid deeppink;*/
@@ -42,7 +42,6 @@
 }
 .additional_points .bottom{
     /*border: 1px solid deeppink;*/
-
     /*margin: 5px;*/
     /*padding: 5px;*/
 }
