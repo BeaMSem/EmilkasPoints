@@ -10,8 +10,7 @@ var SingleReward = React.createClass({
         return this.props.reward.price * (-1) + " points"
     },
     renderMissingPoints(){
-        var amount = (this.state.no_points - this.props.reward.price) * (-1);
-        return 'still missing ' + amount + ' points'
+        return 'still missing ' + ((this.state.no_points - this.props.reward.price) * (-1)) + ' points'
     },
     handleOnClick(){
         this.props.updatePoints((this.props.reward.price)*(-1))
