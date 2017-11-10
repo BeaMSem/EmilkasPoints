@@ -1,5 +1,5 @@
 .additional_points_box{
-    border: 1px solid deeppink;
+    /*border: 1px solid deeppink;*/
     margin: 5px;
     padding: 5px;
 
@@ -8,32 +8,52 @@
     justify-content: flex-start;
 }
 .additional_points{
-    border: 1px solid deeppink;
-    margin: 5px;
-    padding: 5px;
+    /*border: 1px solid yellow;*/
+    /*margin: 5px;*/
+    /*padding: 5px;*/
+    width: 5rem;
+    border-radius: 5px;
+    margin: 4px;
 }
 .additional_points .top{
-    border: 1px solid deeppink;
-    margin: 5px;
-    padding: 5px;
+    /*border: 1px solid deeppink;*/
+    border-radius: 5px 5px 0 0;
+    /*margin: 5px;*/
+    /*padding: 5px;*/
+    background-color: #e9eaee;
 }
 .additional_points .top .number{
-    border: 1px solid deeppink;
-    margin: 5px;
-    padding: 5px;
+    /*border: 1px solid deeppink;*/
+    /*margin: 5px;*/
+    /*padding: 5px;*/
+    text-align: center;
+    font-size: 2rem;
+    padding:1rem 0.25rem 0 0.25rem;
+
 }
 .additional_points .top .points_text{
-    border: 1px solid deeppink;
-    margin: 5px;
-    padding: 5px;
+    /*border: 1px solid deeppink;*/
+    /*margin: 5px;*/
+    /*padding: 5px;*/
+    text-align: center;
+    font-size: 0.8rem;
+    color: gray;
+    padding: 0 0.2rem 1rem 0.2rem;
 }
 .additional_points .bottom{
-    border: 1px solid deeppink;
-    margin: 5px;
-    padding: 5px;
+    /*border: 1px solid deeppink;*/
+
+    /*margin: 5px;*/
+    /*padding: 5px;*/
 }
 .additional_points .bottom .add{
-    border: 1px solid deeppink;
-    margin: 5px;
-    padding: 5px;
+    /*border: 1px solid deeppink;*/
+    /*margin: 5px;*/
+    /*padding: 5px;*/
+    text-align: center;
+    font-size: 1.1rem;
+    color:white;
+    background-color: #81cb3d;
+    border-radius: 0 0 5px 5px;
+    padding: 0.35rem;
 }
